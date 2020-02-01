@@ -19,10 +19,10 @@ public class UserDAOService {
 	static {
 		Collections.addAll(users, 
 				(new User[] {
-						new User(1,"Abhinav", new Date()),
-						new User(2,"Mohit", new Date()),
-						new User(3,"Pandit", new Date()),
-						new User(4,"Abhijeet", new Date())
+						new User(1,"Abhinav", new Date(), null),
+						new User(2,"Mohit", new Date(), null),
+						new User(3,"Pandit", new Date(), null),
+						new User(4,"Abhijeet", new Date(), null)
 						}
 				));
 	}
