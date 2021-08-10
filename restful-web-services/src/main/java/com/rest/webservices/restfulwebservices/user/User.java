@@ -12,8 +12,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -22,7 +22,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @Entity
-@ApiModel(description = "All details about the user")
+//@ApiModel(description = "All details about the user")
 public class User {
 
 	User() {}
@@ -38,11 +38,11 @@ public class User {
 	private Integer id;
 	
 	@Size(min = 4, message = "Name length should have atleast 4 characters")
-	@ApiModelProperty(notes = "Name length should have atleast 4 charecters")
+//	@ApiModelProperty(notes = "Name length should have atleast 4 charecters")
 	private String name;
 	
 	@Past
-	@ApiModelProperty(notes = "Date of birth should be in the past")
+//	@ApiModelProperty(notes = "Date of birth should be in the past")
 	private Date dob;
 	
 	@OneToMany(mappedBy = "user")
